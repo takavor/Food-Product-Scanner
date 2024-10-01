@@ -4,7 +4,7 @@ import { View, Text, Button, StyleSheet } from 'react-native';
 const HomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Welcome to Ingredient Scannerrrrr</Text>
+      <Text style={styles.title}>Welcome to Ingredients Scanner</Text>
       <Button
         title="Scan Ingredients"
         onPress={() => navigation.navigate('Camera')}
