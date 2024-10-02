@@ -3,27 +3,11 @@ import React, {useState, useEffect} from 'react'
 
 export default function ResultsScreen({route}) {
     
-    const {imageUri, ocrResult} = route.params;
-    const [ingredientsText, setIngredientsText] = useState('');
-
-    useEffect(() => {
-        const extractIngredients = () => {
-            const ingredientsKeywords = ['ingredients', 'ingredient', 'ingredients:', 'ingredient:']
-            
-            for (const block of ocrResult.blocks) {
-                console.log('---BLOCK START---')
-                console.log(block)
-                console.log('---BLOCK END---')
-            }
-
-        }
-
-        extractIngredients();
-    })
+    const {code} = route.params;
 
     return (
     <ScrollView contentContainerStyle={styles.container}>
-        {/* <Text>{ingredients}</Text> */}
+        <Text>{code.value}</Text>
     </ScrollView>
   )
 }

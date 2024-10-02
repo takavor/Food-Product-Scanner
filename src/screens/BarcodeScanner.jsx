@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
+import { Vibration, StyleSheet } from 'react-native';
 import { Camera, useCodeScanner, useCameraDevice, useCameraPermission } from 'react-native-vision-camera';
 
 
@@ -9,11 +9,12 @@ const BarcodeScanner = ({ navigation }) => {
         codeTypes: ['qr', 'ean-13', 'upc-a', 'upc-e'],
         onCodeScanned: (codes) => {
           for (const code of codes) {
-            console.log(`Code ${code.value}`)
+            Vibration.vibrate(100);
+            navigation.navigate('Results', {code: code})
           }
         }
     })
-
+    
     const device = useCameraDevice('back')
     const { hasPermission } = useCameraPermission()
 
