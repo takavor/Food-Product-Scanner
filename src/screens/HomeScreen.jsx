@@ -7,7 +7,7 @@ const HomeScreen = ({ navigation }) => {
       <Text style={styles.title}>Welcome to Ingredients Scanner</Text>
       <Button
         title="Scan Ingredients"
-        onPress={() => navigation.navigate('Camera')}
+        onPress={() => navigation.navigate('BarcodeScanner')}
       />
     </View>
   );
