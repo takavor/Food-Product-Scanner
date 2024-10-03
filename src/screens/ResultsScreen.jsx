@@ -11,6 +11,12 @@ export default function ResultsScreen({route, navigation}) {
   const nutriScore = product.nutrition_grade_fr;
   const ecoScore = product.ecoscore_grade;
 
+  console.log('Product name:', productName);
+  console.log('Brand:', brand);
+  console.log('Allergens:', allergens);
+  console.log('Nutri score:', nutriScore);
+  console.log('Eco score:', ecoScore);
+
   const formatTags = tags =>
     tags.map(tag => tag.replace(/en:/, '').replace(/-/g, ' ')).join(', ');
 

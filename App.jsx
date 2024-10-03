@@ -4,7 +4,6 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
 import HomeScreen from './src/screens/HomeScreen';
-import CameraScreen from './src/screens/CameraScreen';
 import ResultsScreen from './src/screens/ResultsScreen';
 import BarcodeScanner from './src/screens/BarcodeScanner';
 
@@ -20,7 +19,6 @@ function App() {
             component={HomeScreen}
             options={{headerShown: false}}
           />
-          <Stack.Screen name="Camera" component={CameraScreen} />
           <Stack.Screen
             name="Results"
             component={ResultsScreen}

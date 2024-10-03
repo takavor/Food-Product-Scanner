@@ -47,6 +47,22 @@ const BarcodeScanner = ({navigation}) => {
 
       if (data.status == 1) {
         setIsLoading(false);
+
+        product = data.product;
+
+        const productName = product.product_name;
+        const brand = product.brands;
+        const allergens = product.allergens_tags;
+        const nutriScore = product.nutrition_grade_fr;
+        const ecoScore = product.ecoscore_grade;
+
+        console.log('-----------------');
+        console.log('Product name:', productName);
+        console.log('Brand:', brand);
+        console.log('Allergens:', allergens);
+        console.log('Nutri score:', nutriScore);
+        console.log('Eco score:', ecoScore);
+
         navigation.navigate('Results', {data: data});
       } else {
         Alert.alert(
@@ -76,8 +92,8 @@ const BarcodeScanner = ({navigation}) => {
     }, []),
   );
 
-  if (!hasPermission) return <PermissionsPage />;
-  if (device == null) return <NoCameraDeviceError />;
+  // if (!hasPermission) return <PermissionsPage />;
+  // if (device == null) return <NoCameraDeviceError />;
 
   return (
     <View style={styles.container}>
