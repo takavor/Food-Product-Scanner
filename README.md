@@ -2,6 +2,8 @@
 
 An app that allows the user to scan a food product's barcode and provides valuable insights about the item. Insights include nutritional score, ecological score, and possibly present allergens. Created using React Native.
 
+![graphic](assets/graphic.png)
+
 To run the app:
 ```bash
 # using npm
@@ -14,3 +16,5 @@ yarn start
 yarn android
 yarn ios
 ```
+![imgone](assets/IMG_2913.png)
+![imgtwo](assets/IMG_2914.png)
