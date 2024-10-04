@@ -21,3 +21,6 @@ yarn ios
   <img src="assets/IMG_2913.PNG" width="400">
   <img src="assets/IMG_2914.PNG" width="400">
 </p>
+
+## Notes about release
+I have not released the app on Google Play nor on the App Store, primarily due to the associated costs.
