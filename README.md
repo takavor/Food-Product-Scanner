@@ -16,5 +16,5 @@ yarn start
 yarn android
 yarn ios
 ```
-![imgone](assets/IMG_2913.png)
-![imgtwo](assets/IMG_2914.png)
+![imgone](assets/IMG_2913.PNG)
+![imgtwo](assets/IMG_2914.PNG)
